@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
-  s.source_files = 'greenNotification/Classes/**/*'
+  s.source_files = 'greenNotification/greenNotification/Classes/**/*'
 
 end
