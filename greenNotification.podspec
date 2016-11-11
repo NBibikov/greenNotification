@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
   s.screenshots     = 'https://raw.githubusercontent.com/NBibikov/greenNotification/master/greenPopUPNotification.jpg'
   s.license          = "MIT"
   s.author           = { 'Nick Bibikov' => 'n.bibikov@me.com' }
-  s.source           = { :git => 'https://github.com/NBibikov/greenNotification.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/NBibikov/greenNotification.git', :commit => "09ccd81c4cc0d41a63b43d3e14131090a5eb95bf" }
   # s.social_media_url = 'https://twitter.com/nbibikov'
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
-  s.source_files = 'greenNotification/greenNotification/Classes/**/*'
+  s.source_files = 'greenNotification/Classes/**/*'
 
 end
