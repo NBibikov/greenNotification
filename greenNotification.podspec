@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'greenNotification'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Show custom popups easy and quick in new window'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.screenshots     = 'https://raw.githubusercontent.com/NBibikov/greenNotification/master/greenPopUPNotification.jpg'
   s.license          = "MIT"
   s.author           = { 'Nick Bibikov' => 'n.bibikov@me.com' }
-  s.source           = { :git => 'https://github.com/NBibikov/greenNotification.git', :commit => "09ccd81c4cc0d41a63b43d3e14131090a5eb95bf" }
+  s.source           = { :git => 'https://github.com/NBibikov/greenNotification.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/nbibikov'
 
   s.ios.deployment_target = '9.0'
