@@ -9,26 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = 'greenNotification'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of greenNotification.'
+  s.summary          = 'Show custom popups easy and quick in new window'
 
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+#   * Do yout need quick present popup notification?
+#   * You can use this library for show popup with title, text, image and buttons
+#   * Or you can show with animation your custom UIView from XIB file
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/greenNotification'
+  s.description      = "Do yout need quick present popup notification? You can use this library for show popup with title, text, image and buttons. Or you can show with animation your custom UIView from XIB file"
+
+  s.homepage         = 'https://github.com/NBibikov/greenNotification'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = "MIT"
   s.author           = { 'Nick Bibikov' => 'n.bibikov@me.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/greenNotification.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/NBibikov/greenNotification.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/nbibikov'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'greenNotification/Classes/**/*'
   

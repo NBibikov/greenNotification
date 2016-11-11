@@ -1,25 +1,180 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="greenNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDw-Lq-ccs" customClass="roundedButton" customModule="greenNotification_Example" customModuleProvider="target">
+                                <rect key="frame" x="32" y="244" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="skd-Mv-4ka"/>
+                                </constraints>
+                                <state key="normal" title="with Image">
+                                    <color key="titleColor" red="0.98324030637741089" green="0.37743669748306274" blue="0.33804428577423096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showImageNotificationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RAQ-R7-zmV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oO0-h5-JbM" customClass="roundedButton" customModule="greenNotification_Example" customModuleProvider="target">
+                                <rect key="frame" x="32" y="312" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0ab-Lh-gQF"/>
+                                </constraints>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showCleanNotificationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RbD-dv-bLP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-UQ-0fW" customClass="roundedButton" customModule="greenNotification_Example" customModuleProvider="target">
+                                <rect key="frame" x="32" y="380" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vwh-um-XFs"/>
+                                </constraints>
+                                <state key="normal" title="one Button">
+                                    <color key="titleColor" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showOneButtonNotificationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8iP-Ta-xQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-Yc-73V" customClass="roundedButton" customModule="greenNotification_Example" customModuleProvider="target">
+                                <rect key="frame" x="32" y="448" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fKG-XM-Cuf"/>
+                                </constraints>
+                                <state key="normal" title="two Buttons">
+                                    <color key="titleColor" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showTwoButtonNotificationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KRG-PY-lUj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMN-6o-jon" customClass="roundedButton" customModule="greenNotification_Example" customModuleProvider="target">
+                                <rect key="frame" x="32" y="516" width="311" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SDl-up-znr"/>
+                                </constraints>
+                                <state key="normal" title="custom mianView">
+                                    <color key="titleColor" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.98324030640000004" green="0.37743669749999997" blue="0.33804428580000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showCustomMainViewNotificationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nqr-IC-Spk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popUP" translatesAutoresizingMaskIntoConstraints="NO" id="aUp-jk-5rh">
+                                <rect key="frame" x="59" y="52" width="256" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aUp-jk-5rh" secondAttribute="height" multiplier="8:5" id="ua0-nX-Ze7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82836681604385376" green="0.97687357664108276" blue="0.64230555295944214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlG-Yc-73V" firstAttribute="top" secondItem="rtf-UQ-0fW" secondAttribute="bottom" constant="24" id="1Dd-QZ-JTW"/>
+                            <constraint firstItem="rtf-UQ-0fW" firstAttribute="leading" secondItem="oO0-h5-JbM" secondAttribute="leading" id="1F5-qj-EnU"/>
+                            <constraint firstItem="oO0-h5-JbM" firstAttribute="trailing" secondItem="xDw-Lq-ccs" secondAttribute="trailing" id="1W1-s0-whc"/>
+                            <constraint firstItem="hlG-Yc-73V" firstAttribute="trailing" secondItem="rtf-UQ-0fW" secondAttribute="trailing" id="9Jg-IX-aqo"/>
+                            <constraint firstItem="rtf-UQ-0fW" firstAttribute="trailing" secondItem="oO0-h5-JbM" secondAttribute="trailing" id="BBI-wQ-G3t"/>
+                            <constraint firstItem="QMN-6o-jon" firstAttribute="trailing" secondItem="hlG-Yc-73V" secondAttribute="trailing" id="FRk-W5-ESc"/>
+                            <constraint firstItem="QMN-6o-jon" firstAttribute="leading" secondItem="hlG-Yc-73V" secondAttribute="leading" id="GXb-cA-dev"/>
+                            <constraint firstItem="xDw-Lq-ccs" firstAttribute="top" secondItem="aUp-jk-5rh" secondAttribute="bottom" constant="32" id="HrG-qL-3EY"/>
+                            <constraint firstItem="aUp-jk-5rh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="U8Q-ve-HIH"/>
+                            <constraint firstItem="oO0-h5-JbM" firstAttribute="leading" secondItem="xDw-Lq-ccs" secondAttribute="leading" id="U9b-v3-QlR"/>
+                            <constraint firstItem="aUp-jk-5rh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="WdG-z9-dix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xDw-Lq-ccs" secondAttribute="trailing" constant="16" id="Ydo-rO-PxR"/>
+                            <constraint firstItem="hlG-Yc-73V" firstAttribute="leading" secondItem="rtf-UQ-0fW" secondAttribute="leading" id="ZN2-aY-7Nc"/>
+                            <constraint firstItem="QMN-6o-jon" firstAttribute="top" secondItem="hlG-Yc-73V" secondAttribute="bottom" constant="24" id="b3c-Xx-MDe"/>
+                            <constraint firstItem="rtf-UQ-0fW" firstAttribute="top" secondItem="oO0-h5-JbM" secondAttribute="bottom" constant="24" id="p8M-wc-M9C"/>
+                            <constraint firstItem="xDw-Lq-ccs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="u4z-vD-Th7"/>
+                            <constraint firstItem="oO0-h5-JbM" firstAttribute="top" secondItem="xDw-Lq-ccs" secondAttribute="bottom" constant="24" id="vqr-yM-VMC"/>
+                            <constraint firstItem="aUp-jk-5rh" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.24" id="y4k-VV-gsy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="popUP" width="400" height="300"/>
+    </resources>
 </document>
