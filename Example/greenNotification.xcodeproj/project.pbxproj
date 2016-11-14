@@ -12,7 +12,6 @@
 		3261E1ED1DD5F034000401B8 /* greenNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261E1E71DD5F034000401B8 /* greenNotification.swift */; };
 		3261E1EE1DD5F034000401B8 /* greenObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261E1E81DD5F034000401B8 /* greenObject.swift */; };
 		3261E1EF1DD5F034000401B8 /* greenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261E1E91DD5F034000401B8 /* greenViewController.swift */; };
-		3261E1F01DD5F034000401B8 /* statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261E1EA1DD5F034000401B8 /* statics.swift */; };
 		3261E1F11DD5F034000401B8 /* viewWithHeaderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3261E1EB1DD5F034000401B8 /* viewWithHeaderImage.swift */; };
 		3261E1F21DD5F034000401B8 /* viewWithHeaderImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3261E1EC1DD5F034000401B8 /* viewWithHeaderImage.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -39,7 +38,6 @@
 		3261E1E71DD5F034000401B8 /* greenNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = greenNotification.swift; path = ../../greenNotification/Classes/greenNotification.swift; sourceTree = "<group>"; };
 		3261E1E81DD5F034000401B8 /* greenObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = greenObject.swift; path = ../../greenNotification/Classes/greenObject.swift; sourceTree = "<group>"; };
 		3261E1E91DD5F034000401B8 /* greenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = greenViewController.swift; path = ../../greenNotification/Classes/greenViewController.swift; sourceTree = "<group>"; };
-		3261E1EA1DD5F034000401B8 /* statics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = statics.swift; path = ../../greenNotification/Classes/statics.swift; sourceTree = "<group>"; };
 		3261E1EB1DD5F034000401B8 /* viewWithHeaderImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = viewWithHeaderImage.swift; path = ../../greenNotification/Classes/viewWithHeaderImage.swift; sourceTree = "<group>"; };
 		3261E1EC1DD5F034000401B8 /* viewWithHeaderImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = viewWithHeaderImage.xib; path = ../../greenNotification/Classes/viewWithHeaderImage.xib; sourceTree = "<group>"; };
 		44C8086B031A73966AE19579 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				3261E1E71DD5F034000401B8 /* greenNotification.swift */,
 				3261E1E81DD5F034000401B8 /* greenObject.swift */,
 				3261E1E91DD5F034000401B8 /* greenViewController.swift */,
-				3261E1EA1DD5F034000401B8 /* statics.swift */,
 				3261E1EB1DD5F034000401B8 /* viewWithHeaderImage.swift */,
 				3261E1EC1DD5F034000401B8 /* viewWithHeaderImage.xib */,
 			);
@@ -264,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3261E1F01DD5F034000401B8 /* statics.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				3261E1C71DD5CA2C000401B8 /* roundedButton.swift in Sources */,
 				3261E1EF1DD5F034000401B8 /* greenViewController.swift in Sources */,

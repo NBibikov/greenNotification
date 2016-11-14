@@ -8,6 +8,16 @@
 
 import UIKit
 
+let kLeftAndRightPadding : CGFloat = 32
+
+let mainWidth = UIScreen.main.bounds.width
+let mainHeight = UIScreen.main.bounds.height
+
+let kDefaultHeaderImageHeight : CGFloat = 130
+let kContentHeight : CGFloat = 100
+let kButtonsHeight : CGFloat = 64
+let kVerticalMarginForMaxView : CGFloat = 100
+
 class viewWithHeaderImage: UIView
 {
     @IBOutlet weak var nImageView: UIImageView!

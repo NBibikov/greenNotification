@@ -8,22 +8,23 @@
 
 import UIKit
 
+typealias completionHandler = (_ sender: UIButton?) -> Void
 
 class greenNotification: NSObject
 {
     
     
-    public static func showNotification(title: NSAttributedString?, message: NSAttributedString?, titleImage : UIImage?, completion: completionHandler?) -> ()
+    static func showNotification(title: NSAttributedString?, message: NSAttributedString?, titleImage : UIImage?, completion: completionHandler?) -> ()
     {
         greenNotification.initNewWindowWithView(titleValue: title, messageValue: message, imageValue: titleImage, buttonsArray: nil, completionValue: completion)
     }
     
-    public static func showNotificationWithButtons(title: NSAttributedString, message: NSAttributedString, titleImage : UIImage?, buttons: Array<UIButton>?, completion:completionHandler!) -> ()
+    static func showNotificationWithButtons(title: NSAttributedString, message: NSAttributedString, titleImage : UIImage?, buttons: Array<UIButton>?, completion:completionHandler!) -> ()
     {
         greenNotification.initNewWindowWithView(titleValue: title, messageValue: message, imageValue: titleImage, buttonsArray: buttons, completionValue: completion)
     }
     
-    public static func showNotificationWithView(mainView: UIView, completion:completionHandler?) -> ()
+    static func showNotificationWithView(mainView: UIView, completion:completionHandler?) -> ()
     {
         greenNotification.initNewWindowWithView(mainView: mainView, completionValue: completion)
     }
