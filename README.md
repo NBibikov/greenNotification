@@ -21,7 +21,6 @@ it, simply add the following line to your Podfile:
 ```
 pod 'greenNotification'
 ```
-
 ## Author
 
 Nick Bibikov, n.bibikov@me.com

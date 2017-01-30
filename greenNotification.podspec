@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'greenNotification'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'Show custom popups easy and quick in new window'
 
 # This description is used to generate tags and improve search results.
@@ -28,6 +28,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
-  s.source_files = 'greenNotification/Classes/*'
+  s.source_files = '$(PODS_ROOT)/Classes/*'
 
 end
